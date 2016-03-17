@@ -1,0 +1,22 @@
+// eslint configuration file
+// see: http://eslint.org/docs/user-guide/configuring
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "mocha": true,
+    "commonjs": true,
+    "jquery": true
+  },
+  "rules": {
+    "semi": 2
+  }
+}

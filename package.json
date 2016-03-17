@@ -1,0 +1,25 @@
+{
+  "name": "connectify_koa",
+  "version": "1.0.0",
+  "description": "Connectify App",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha test/"
+  },
+  "keywords": [
+    "connectify"
+  ],
+  "author": "surfacew@163.com",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^1.2.0"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^1.1.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
