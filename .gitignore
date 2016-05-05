@@ -19,6 +19,7 @@ test-output/
 
 bin/
 dist/
+public/
 node_modules/
 
 antx.properties
