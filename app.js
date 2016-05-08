@@ -3,6 +3,7 @@
  */
 
 const koa = require('koa');
+const bodyParser = require('koa-bodyparser');
 const mongoose = require('mongoose');
 const route = require('koa-route');
 const Jade = require('koa-jade');
@@ -22,7 +23,9 @@ jade.locals.name = 'connectify';
 /**
  * Server configuration
  */
+app.use(bodyParser());
 app.use(route.get('/', require('./routes/index')));
+app.use(route.get('/search/:entityName', require('./routes/searchEntity')));
 app.use(route.post('/entity', require('./routes/createEntity')));
 app.use(route.get('/entity/:entityId', require('./routes/getEntity')));
 app.use(route.put('/entity/:entityId', require('./routes/updateEntity')));
