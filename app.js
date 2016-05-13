@@ -4,6 +4,7 @@
 
 const koa = require('koa');
 const bodyParser = require('koa-bodyparser');
+const cors = require('koa-cors');
 const mongoose = require('mongoose');
 const route = require('koa-route');
 const Jade = require('koa-jade');
@@ -24,6 +25,7 @@ jade.locals.name = 'connectify';
  * Server configuration
  */
 app.use(bodyParser());
+app.use(cors({'credentials': true}));
 app.use(route.get('/', require('./routes/index')));
 app.use(route.get('/search/:entityName', require('./routes/searchEntity')));
 app.use(route.post('/entity', require('./routes/createEntity')));
