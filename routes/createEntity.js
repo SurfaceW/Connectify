@@ -25,7 +25,8 @@ const createEntity = (data) => {
     Entity.create({
       name: data.name,
       define: data.define || '',
-      props: data.props
+      props: data.props || [],
+      relations: data.relations || []
     }, (err, entityInstance) => {
       if (err) {
         res = _.merge(res, {

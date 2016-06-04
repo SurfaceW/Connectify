@@ -4,7 +4,7 @@
 
 const Entity = require('../models/entity');
 const Response = require('../core/response');
-const _ = require('ramda');
+const _ = require('lodash');
 
 let res = new Response();
 

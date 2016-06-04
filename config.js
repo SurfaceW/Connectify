@@ -2,7 +2,7 @@
  * Configuaration file of this app
  */
 
-let C = {};
+const C = {};
 
 /**
  * Network configurations

@@ -11,9 +11,9 @@ const Entity = new Schema({
   props: [{
     name: String,
     value: Schema.Types.Mixed
-  }]
-  // relations: [],
-  // actions: []
+  }],
+  relations: [],
+  actions: []
 });
 
 module.exports = mongoose.model('EntityModel', Entity);
