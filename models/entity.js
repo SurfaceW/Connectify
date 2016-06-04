@@ -12,7 +12,13 @@ const Entity = new Schema({
     name: String,
     value: Schema.Types.Mixed
   }],
-  relations: [],
+  relations: [{
+    name: String,
+    relatedEntities: [{
+      '_id': String,
+      name: String
+    }]
+  }],
   actions: []
 });
 
