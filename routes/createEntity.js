@@ -24,6 +24,7 @@ const createEntity = (data) => {
     }
     Entity.create({
       name: data.name,
+      detail: data.detail || '',
       define: data.define || '',
       props: data.props || [],
       relations: data.relations || []

@@ -7,6 +7,7 @@ const Schema = mongoose.Schema;
 
 const Entity = new Schema({
   name: String,
+  detail: String,
   define: String,
   props: [{
     name: String,
